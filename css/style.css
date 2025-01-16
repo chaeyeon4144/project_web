@@ -34,14 +34,12 @@ li {
 }
 /* 상단 - header */
 .header {
-  width: ;
   height: 960px;
-  background-color: aqua;
   position: relative;
 }
 /* 상단 - menu bar  */
 .header_menu_bar {
-  width: 1582px;
+  width: 1600px;
   height: 72px;
   background-color: rgba(255, 255, 255, 25%);
   display: flex;
@@ -75,11 +73,13 @@ li {
 }
 .header_menu_list {
   display: flex;
+  
 }
 .header_menu_list li {
-  margin: 0 20px;
+  margin: 0 22px;
   font-size: 20px;
   color: #fff;
+  
 }
 .header_menu_list .li_shop {
   position: relative;
