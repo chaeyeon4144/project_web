@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Project_web_design</title>
+  </head>
+  <body>
+    <!-- 큰 레이아웃 -->
+    <div class="contanier">
+      <!-- 상단 - 헤더 -->
+      <header class="header">
+        <!-- 헤더 안 메뉴 바 -->
+        <div class="header_menu_bar">
+          <!-- 메뉴 바 안 메뉴아이콘 -->
+          <span>
+            <a href="#">
+              <img src="images/header_menu_bar.png" alt="munu_icon" />
+            </a>
+          </span>
+          <!-- 메뉴 바 안 상품 바로가기 텍스트 -->
+          <span><a href="#">I&nbsp; Now&nbsp;I&nbsp;Love&nbsp;Myself</a></span>
+          <!-- 메뉴 바 안 홈페이지 로고 -->
+          <h1><a href="index.html">tou&nbsp;t&nbsp;yest</a></h1>
+          <!-- 메뉴 바 안 메뉴 리스트 -->
+          <nav class="nav">
+            <ul class="header_menu_list">
+              <li class="li_shop">
+                <a href="">SHOP</a>
+                <ul class="depth2">
+                  <li><a href="#">All&nbsp;NEW&nbsp;IN</a></li>
+                  <li><a href="#">BAGS</a></li>
+                  <li><a href="#">SHOES</a></li>
+                  <li><a href="#">SMALL&nbsp;GOODS</a></li>
+                </ul>
+              </li>
+              <li><a href="">CART(0)</a></li>
+              <li><a href="">MY&nbsp;PAGE</a></li>
+              <li><a href="">GLOBAL</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- 헤더 안 비주얼 리스트 -->
+
+        <!-- Swiper -->
+        <div class="swiper visual_swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="images/header_slid_01page.jpg" alt="슬라이드이미지1" />
+              <!-- 헤더 안 텍스트 팝업 -->
+              <div class="header_text">
+                <p>새롭게&nbsp;선보이는&nbsp;위브&nbsp;패턴으로&nbsp;만든&nbsp;에티레백</p>
+                <h2>SAC&nbsp;ÉTIRÉ&nbsp;SMALL</h2>
+                <button class="view_btn"><a href="#">VIEW&nbsp;MORE</a></button>
+                <button class="cart_btn"><a href="#">ADD&nbsp;CART</a></button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="images/header_slid_02page.jpg" alt="슬라이드이미지2" />
+              <!-- 헤더 안 텍스트 팝업 -->
+              <div class="header_text">
+                <p>새롭게&nbsp;선보이는&nbsp;위브&nbsp;패턴으로&nbsp;만든&nbsp;에티레백</p>
+                <h2>SAC&nbsp;ÉTIRÉ&nbsp;SMALL</h2>
+                <button class="view_btn"><a href="#">VIEW&nbsp;MORE</a></button>
+                <button class="cart_btn"><a href="#">ADD&nbsp;CART</a></button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="images/header_slid_03page.jpg" alt="슬라이드이미지3" />
+              <!-- 헤더 안 텍스트 팝업 -->
+              <div class="header_text">
+                <p>새롭게&nbsp;선보이는&nbsp;위브&nbsp;패턴으로&nbsp;만든&nbsp;에티레백</p>
+                <h2>SAC&nbsp;ÉTIRÉ&nbsp;SMALL</h2>
+                <button class="view_btn"><a href="#">VIEW&nbsp;MORE</a></button>
+                <button class="cart_btn"><a href="#">ADD&nbsp;CART</a></button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="images/header_slid_04page.jpg" alt="슬라이드이미지4" />
+              <!-- 헤더 안 텍스트 팝업 -->
+              <div class="header_text">
+                <p>새롭게&nbsp;선보이는&nbsp;위브&nbsp;패턴으로&nbsp;만든&nbsp;에티레백</p>
+                <h2>SAC&nbsp;ÉTIRÉ&nbsp;SMALL</h2>
+                <button class="view_btn"><a href="#">VIEW&nbsp;MORE</a></button>
+                <button class="cart_btn"><a href="#">ADD&nbsp;CART</a></button>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".visual_swiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+      </header>
+    </div>
+  </body>
+</html>
