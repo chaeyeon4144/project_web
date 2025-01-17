@@ -7,7 +7,7 @@
 html,
 body {
   position: relative;
-  height: 3000px;
+  font: 15px;
 }
 
 body {
@@ -30,11 +30,10 @@ li {
 /* 큰 레이아웃 */
 .contanier {
   width: 100%;
-  height: 100%;
 }
 /* 상단 - header */
 .header {
-  height: 960px;
+  /* height: 960px; */
   position: relative;
 }
 /* 상단 - menu bar  */
@@ -44,7 +43,7 @@ li {
   background-color: rgba(255, 255, 255, 25%);
   display: flex;
   align-items: center;
-  gap: calc(100% / 4 - 170px);
+  gap: calc(100% / 4 - 190px);
   position: absolute;
   top: 100px;
   left: 50%;
@@ -52,6 +51,14 @@ li {
   z-index: 999;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   position: fixed;
+}
+/* 이미지 슬라이드 아이콘 색상 변경 */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: rgba(255, 255, 255, 0.25);
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 /* 상단 메뉴 바 안 요소들 */
 .header_menu_bar span:first-child img {
@@ -73,34 +80,11 @@ li {
 }
 .header_menu_list {
   display: flex;
-  
 }
 .header_menu_list li {
-  margin: 0 22px;
-  font-size: 20px;
+  margin: 0 20px;
+  font-size: 18px;
   color: #fff;
-  
-}
-.header_menu_list .li_shop {
-  position: relative;
-  cursor: pointer;
-}
-.depth2 {
-  display: none;
-  position: absolute;
-  top: 47px;
-  left: -35px;
-  background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  list-style: none;
-}
-.depth2 > li > a {
-  display: block;
-  padding: 20px;
-  text-align: left;
-}
-.depth2 > li > a:last-child {
-  padding-bottom: 20px;
 }
 
 /* 메뉴 바 안 메뉴 리스트 호버 */
@@ -111,37 +95,13 @@ li {
 .header_menu_list > li > a:hover {
   color: rgba(0, 0, 0, 0.25);
 }
-.header_menu_list > .li_shop:hover {
-  background-color: #ddd;
-}
-.depth2 > .li_shop:hover {
-  background-color: rgba(0, 0, 0, 0.25);
-}
-.header_menu_list > .li_shop:hover .depth2 {
-  display: block;
-}
-/* 에니메이션 추가 */
-.depth2 {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease, visivility 0s 0.3s;
-  /* 사라질때 딜레이 */
-}
-.header_menu_list .li_shop:hover .depth2 {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  /* 나타날때 */
+.header_menu_list > li:hover {
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* 헤더 안 이미지 리스트 */
 
-.visual_swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
+.visual_swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -150,7 +110,7 @@ li {
   align-items: center;
 }
 
-.swiper-slide img {
+.visual_swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -208,4 +168,92 @@ li {
 .cart_btn a:hover {
   background-color: rgba(0, 0, 0, 0.25);
   color: #fff;
+}
+/* 메인 -탑*/
+.main_top {
+  width: 100%;
+  /* height: 800px; */
+  /* background-color: red; */
+  position: relative;
+}
+/* 메인탑- 이너 */
+.main_inner {
+  width: 70%;
+  max-width: 1400px;
+  height: 41.66vw;
+  /* background-color: blue; */
+  margin: auto;
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+/* 메인탑 안 이미지 슬라이드 */
+.main_topSwiper {
+  width: 60%;
+}
+
+.main_topSwiper .swiper-slide {
+  width: 100%;
+}
+
+.main_topSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* 메인탑 슬라이드2 */
+.main_top_slid2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  gap: 20px;
+}
+.main_top_slid2 div {
+  height: 50%;
+  position: relative;
+}
+.main_top_slid2 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* 텍스트들 호버했을 떄 */
+.hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 9999;
+  background-color: rgba(225, 225, 225, 0.5);
+  color: #333;
+  text-align: center;
+  padding: 10%;
+  /* 부드러운 이동 */
+  transition: transform 0.3s ease;
+  display: none;
+  overflow: none;
+  
+  
+}
+.hover-text h2{
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.hover-text p{
+  text-align: left;
+  
+}
+.top_img:hover .hover-text , .bottm_img:hover .hover-text {
+  transform: translateY(-200%);
+  display: block;
+  
+}
+
+/* 메인 탑 안 제목 */
+.main_top h1 {
+  margin: 5% 15%;
+  font-size: 2rem;
 }

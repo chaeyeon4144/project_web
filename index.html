@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/style.js"></script>
     <title>Project_web_design</title>
   </head>
   <body>
@@ -29,17 +35,15 @@
           <!-- 메뉴 바 안 메뉴 리스트 -->
           <nav class="nav">
             <ul class="header_menu_list">
-              <li class="li_shop">
+              <li>
                 <a href="">SHOP</a>
-                <ul class="depth2">
-                  <li><a href="#">All&nbsp;NEW&nbsp;IN</a></li>
-                  <li><a href="#">BAGS</a></li>
-                  <li><a href="#">SHOES</a></li>
-                  <li><a href="#">SMALL&nbsp;GOODS</a></li>
-                </ul>
               </li>
-              <li><a href="">CART(0)</a></li>
-              <li><a href="">MY&nbsp;PAGE</a></li>
+              <li>
+                <a href="">CART(0)</a>
+              </li>
+              <li>
+                <a href="">MY&nbsp;PAGE</a>
+              </li>
               <li><a href="">GLOBAL</a></li>
             </ul>
           </nav>
@@ -96,47 +100,119 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".visual_swiper", {
-            loop:true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-              delay: 3500,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        </script>
       </header>
       <!-- 메인  -->
-       <section class="main_top">
+      <section class="main_top">
         <!-- 메인- 탑 _ 안 _ 이너 -->
-        <div class="main_top_inner">
+        <!-- 슬라이 제목 -->
+        <h1>24&nbsp;Our&nbsp;Archive&nbsp;Products</h1>
+        <div class="main_inner">
           <!-- 메인 탑 안 슬라이드1 -->
-          <article class="main_top_slid1">
+          <div class="swiper main_topSwiper">
+            <!-- 슬라이 제목 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/main_slide_02.jpg" alt="갈색가방" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/main_slide_03.jpg" alt="파란가방" />
+              </div>
+            </div>
+          </div>
 
-          </article>
           <!-- 메인 탑 안 슬라이드2 -->
           <article class="main_top_slid2">
+            <div class="top_img">
+              <img src="images/main_right_02.png" alt="브라운가방" />
+              <!-- 호버했을 때 텍스트 -->
+               <div class="hover-text">
+                <h2>SAC PAUMELLE
+                  <hr>
+                  포멜백</h2>
+                  <p>
+                    포멜백은 네모 반듯하고 단정한 형태의 숄더백으로 투티에의 시그니처 모델 중 하나입니다.
+                     간결한 바디의 모양과 투티에의 상징적인 브라스 바 장식을 이어주는 하나의 스트랩이 특징적입니다. 
+                     알맞은 길이로 떨어지는 스트랩은 숄더로 착용이 가능하며, 앞, 뒷면 각각 플랩이 있는 빈티지한 디자인으로 내부 포켓이 있는 부분과 구별하여 양쪽 모두 수납하실 수 있습니다.
 
+
+                  </p>
+               </div>
+            </div>
+            <div class="bottm_img">
+              <img src="images/main_right_01.png" alt="파란가방" />
+              <!-- 호버했을 때 텍스트 -->
+              <div class="hover-text">
+                <h2>SAC COQUILLE SMALL
+                  
+                  <hr>
+                  코키 스몰백</h2>
+                  <p>
+                    코튼 캔버스 소재에 부드러운 양가죽 더하여 완성한 쇼퍼백입니다. 
+                    COQUILLE는 프랑스어로 조개 껍질을 뜻하며, 상단의 가죽 스트링으로 자유롭게 형태 조절이 가능한 가방의 특징을 담았습니다. 
+                    소지품이 많을 때는 넓게 펼쳐 쇼퍼백의 형태로, 또는 스트링을 조여 버킷백의 형태로도 사용해보세요. 중앙에는 로고가 각인된 스냅이 있어 잠금이 가능합니다. 
+                  </p>
+               </div>
+            </div>
           </article>
-
         </div>
+      </section>
+      <!-- 메인 바텀  -->
+      <section class="main_bottom">
+        <!-- 메인- 바텀 _ 안 _ 이너 -->
+        <!-- 슬라이 제목 -->
+        <h1>Florence&nbsp;series&nbsp;tradition </h1>
+        <div class="main_inner">
+          <!-- 메인 탑 안 슬라이드1 -->
+          <div class="swiper main_btSwiper">
+            <!-- 슬라이 제목 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/main_slide_04.jpg" alt="가죽제품" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/main_slide_01.jpg" alt="지갑" />
+              </div>
+            </div>
+          </div>
 
-       </section>
+          <!-- 메인 바텀 안 슬라이드2 -->
+          <article class="main_top_slid2">
+            <div class="top_img">
+              <img src="images/mian_left_01.jpg" alt="가죽" />
+              <!-- 호버했을 때 텍스트 -->
+               <div class="hover-text">
+                <h2>SAC PAUMELLE
+                  <hr>
+                  포멜백</h2>
+                  <p>
+                    포멜백은 네모 반듯하고 단정한 형태의 숄더백으로 투티에의 시그니처 모델 중 하나입니다.
+                     간결한 바디의 모양과 투티에의 상징적인 브라스 바 장식을 이어주는 하나의 스트랩이 특징적입니다. 
+                     알맞은 길이로 떨어지는 스트랩은 숄더로 착용이 가능하며, 앞, 뒷면 각각 플랩이 있는 빈티지한 디자인으로 내부 포켓이 있는 부분과 구별하여 양쪽 모두 수납하실 수 있습니다.
+
+
+                  </p>
+               </div>
+            </div>
+            <div class="bottm_img">
+              <img src="images/main_left_02.webp" alt="지갑" />
+              <!-- 호버했을 때 텍스트 -->
+              <div class="hover-text">
+                <h2>SAC COQUILLE SMALL
+                  
+                  <hr>
+                  코키 스몰백</h2>
+                  <p>
+                    코튼 캔버스 소재에 부드러운 양가죽 더하여 완성한 쇼퍼백입니다. 
+                    COQUILLE는 프랑스어로 조개 껍질을 뜻하며, 상단의 가죽 스트링으로 자유롭게 형태 조절이 가능한 가방의 특징을 담았습니다. 
+                    소지품이 많을 때는 넓게 펼쳐 쇼퍼백의 형태로, 또는 스트링을 조여 버킷백의 형태로도 사용해보세요. 중앙에는 로고가 각인된 스냅이 있어 잠금이 가능합니다. 
+                  </p>
+               </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      
     </div>
   </body>
 </html>
