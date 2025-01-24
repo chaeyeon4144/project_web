@@ -1,0 +1,169 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 메인 상품 카테고리 */
+
+/* 메인 카테고리 제목 */
+.main_product_wrap h1 {
+  font-size: 2rem;
+  padding: 2rem;
+  line-height: 2.3rem;
+
+  text-align: center;
+}
+/* 상품 카데고리 섹션 */
+.main_product_wrap {
+  position: relative;
+  width: 100%;
+}
+/* 카드섹션 이미지 중앙 정렬 */
+#card_main_inner {
+  max-width: 1400px;
+  height: 41.66vw;
+  max-height: 600px;
+  margin: auto;
+  position: relative;
+  /* background-color: #333; */
+}
+
+/* 카드 섹션1 */
+.card_section {
+  /* background-color: aquamarine; */
+  border-radius: 5%;
+  width: calc(100% / 3);
+  overflow: hidden;
+  object-fit: cover;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.26);
+  position: relative;
+  transition: all 0.5s;
+}
+.card_section:hover {
+  transform: scale(0.95);
+}
+.card_section:hover .card_text {
+  font-weight: bold;
+}
+
+.card_img {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_img img {
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 999;
+}
+/* 섹션 안 텍스트 */
+.card_text {
+  position: relative;
+  color: #fff;
+  font: 1rem;
+  z-index: 99999;
+}
+.card_text .txt1 {
+  position: absolute;
+  bottom: 75px;
+  left: 2%;
+}
+.card_text .txt2 {
+  position: absolute;
+  right: 2%;
+  bottom: 25px;
+}
+
+/* 이미지에 그라디언트 주기 */
+.card_image_gra {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 21.png");
+  background-size: cover;
+  opacity: 0;
+}
+/* 섹션2 그라디언트 */
+.card_image_gra2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 22.png");
+  background-size: cover;
+  opacity: 0;
+}
+/* 섹션3 그라디언트 */
+.card_image_gra3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 23.png");
+  background-size: cover;
+  opacity: 0;
+}
+
+/* 그라디언트 호버 */
+.card_section:hover .card_image_gra {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 21.png");
+  background-size: cover;
+  opacity: 1;
+  z-index: 9999;
+}
+.card_section:hover .card_image_gra2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 22.png");
+  background-size: cover;
+  opacity: 1;
+  z-index: 9999;
+}
+.card_section:hover .card_image_gra3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 23.png");
+  background-size: cover;
+  opacity: 1;
+  z-index: 9999;
+  /* 마우스를 올렸을때 */
+}
+/* 카드 섹션 안 장바구니 아이콘 */
+.card_shopping_plus {
+  width: 15%;
+  height: 8%;
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  z-index: 9999999;
+}
+
+.card_shopping_plus > a > img {
+  width: 70%;
+  height: 70%;
+  padding-left: 8%;
+}
+/* 카드 섹션 안 장바구니 아이콘 호버 */
+.card_shopping_plus:hover {
+  cursor: pointer;
+}
