@@ -13,8 +13,9 @@
 .header_menu_bar {
   width: 90%;
   max-width: 1400px;
-  min-width: 300px;
+  min-width: 370px;
   height: 8%;
+  min-height: 38px;
   background-color: rgba(255, 255, 255, 25%);
   display: flex;
   align-items: center;
@@ -158,6 +159,7 @@
     height: 7%;
     justify-content: space-between;
     position: relative;
+    top: 95px;
   }
   .header_menu_bar > h1 {
     font-size: 28px;
@@ -206,6 +208,7 @@
     height: 5%;
     /* gap: calc(100% / 4 ); */
     justify-content: space-between;
+    top: 85px;
   }
   .header_menu_bar > h1 {
     font-size: 25px;
@@ -277,6 +280,7 @@
     width: 71%;
     height: 2%;
     justify-content: space-between;
+    top: 75px;
   }
   html{
     font-size: 11px;
@@ -330,16 +334,16 @@
 @media screen and (max-width: 580px) {
   .header_menu_bar {
     width: 68%;
-    height: 0.7%;
+    height: 0.5%;
     justify-content: space-between;
-    top: 70px;
+    top: 60px;
    
   }
   html{
     font-size: 8px;
   }
   .header_menu_bar h1{
-    font-size: 17px;
+    font-size: 15px;
   }
   /* 슬라이드 이미지 안 상품 버튼 */
   .header_text {
@@ -349,13 +353,13 @@
   }
   /* 헤더 안 텍스트 팝업 */
   .header_text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
     color: #fff;
     text-align: left;
   }
   .header_text h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #fff;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -376,6 +380,12 @@
   .view_btn > a , .cart_btn > a {
     padding: 5px 10px;
     font-size: 1rem;
+  }
+  .header_menu_bar span:first-child img {
+    width: 11px;
+    height: 11px;
+
+    margin: 0px 15px;
   }
 
 }
