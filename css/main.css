@@ -84,7 +84,10 @@
   line-height: 1.5rem;
   transform: translateY(100%);
   opacity: 0;
+  height: 180px;
+  overflow-y: scroll;
   transition: all 0.5s;
+  
 }
 .top_img:hover .hover-text,
 .bottm_img:hover .hover-text,

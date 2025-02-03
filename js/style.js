@@ -42,4 +42,14 @@ window.onload = function () {
       },
     },
   });
+  // 스크롤 시 메뉴바 색상 변경
+  window.addEventListener("scroll", function () {
+    let navbar = this.document.querySelector(".header_menu_bar");
+
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
 };
