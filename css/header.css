@@ -180,7 +180,7 @@
     width: 78%;
     height: 7%;
     justify-content: space-between;
-    top: 140px;
+    top: 120px;
     position: fixed;
   }
   .header_menu_bar > h1 {
@@ -268,7 +268,7 @@
   }
   .text_box {
     margin-top: 2.7rem !important;
-}
+  }
   .text_box p {
     font-size: 11px !important;
     padding: 6px !important;
@@ -287,7 +287,7 @@
     /* gap: calc(100% / 4 ); */
     justify-content: space-between;
     position: fixed;
-    top: 100px;
+    top: 80px;
   }
   .header_menu_bar > h1 {
     font-size: 25px;
@@ -403,7 +403,7 @@
   }
   .text_box {
     margin-top: 1.8rem !important;
-}
+  }
   .text_box p {
     font-size: 10px !important;
     padding: 4px !important;
@@ -420,7 +420,7 @@
     height: 2%;
     justify-content: space-between;
     position: fixed;
-    top: 85px;
+    top: 65px;
   }
   html {
     font-size: 11px;
@@ -512,7 +512,7 @@
   /* 푸터 */
   .footer .main_inner {
     width: 100% !important;
-  }   
+  }
   .footer > .main_inner > div > h3 {
     font-size: 0.9rem !important;
     margin-top: 1rem !important;
@@ -522,11 +522,10 @@
   }
   .footer > .main_inner > .box_cs > h3:nth-child(2) {
     margin-top: 0.7rem !important;
- 
-}
+  }
   .text_box {
     margin-top: 1.1rem !important;
-}
+  }
   .text_box p {
     font-size: 9px !important;
     padding: 2.7px !important;
@@ -535,7 +534,6 @@
     width: 17px !important;
     height: 17px !important;
   }
-
 }
 @media screen and (max-width: 580px) {
   .header_menu_bar {
@@ -543,7 +541,7 @@
     height: 0.2%;
     justify-content: space-between;
     position: fixed;
-    top: 60px;
+    top: 40px;
   }
   html {
     font-size: 8px;
@@ -634,34 +632,36 @@
   .card_text .txt2 {
     font-size: 9px !important;
   }
-    /* 푸터 */
-    .footer .main_inner {
-      width: 100% !important;
-    }   
-    .footer > .main_inner > div > h3 {
-      font-size: 1.2rem !important;
-      margin-top: 0.9rem !important;
-    }
-    .footer > .main_inner > .box_cs > h3:first-child {
-      margin-top: 0.3rem !important;
-    }
-    .footer > .main_inner > .box_cs > h3:nth-child(2) {
-      margin-top: 0.6rem !important;
-   
+  /* 푸터 */
+  .footer .main_inner {
+    width: 100% !important;
   }
-    .text_box {
-      margin-top: 1.2rem !important;
+  .footer > .main_inner > div > h3 {
+    font-size: 1.2rem !important;
+    margin-top: 0.9rem !important;
   }
-    .text_box p {
-      font-size: 7px !important;
-      padding: 3px !important;
-    }
-    .box_sns > .text_box > a > img {
-      width: 12px !important;
-      height: 12px !important;
-    }
+  .footer > .main_inner > .box_cs > h3:first-child {
+    margin-top: 0.3rem !important;
+  }
+  .footer > .main_inner > .box_cs > h3:nth-child(2) {
+    margin-top: 0.6rem !important;
+  }
+  .text_box {
+    margin-top: 1.2rem !important;
+  }
+  .text_box p {
+    font-size: 7px !important;
+    padding: 3px !important;
+  }
+  .box_sns > .text_box > a > img {
+    width: 12px !important;
+    height: 12px !important;
+  }
 }
 @media screen and (max-width: 390px) {
+  .header_menu_bar {
+    top: 20px;
+  }
   /* 메인 플레이스 */
   .modal {
     top: 15% !important;
