@@ -201,81 +201,87 @@
     bottom: 25%;
     left: 12%;
   }
-  /* 슬라이드 이미지 안 상품 버튼 */
-  .view_btn,
-  .cart_btn {
-    margin-right: 5px;
-  }
-  .view_btn {
-    position: absolute;
-    top: 114px;
-    left: 0;
-  }
-  .cart_btn {
-    position: absolute;
-    top: 114px;
-    left: 150px;
-  }
-  /* 헤더 메뉴바 안 메뉴 아이콘 */
-  .header_menu_bar span:first-child img {
-    width: 25px;
-    height: 25px;
-  }
-  /* main 스와이퍼 텍스트 크기 조절 */
-  .hover-text > p {
-    height: 100px !important;
-    font-size: 13px !important;
-  }
-  .hover-text > h2 {
-    font-size: 17px !important;
-  }
-  .modal_content {
-    height: 300px !important;
-  }
-  /* 섹션 안 텍스트 */
-  .card_text {
-    font: 1rem;
-    z-index: 99999;
-  }
-  .card_text .txt1 {
-    font-size: 12px !important;
-    bottom: 75px;
-    left: 3%;
-  }
-  .card_text .txt2 {
-    position: absolute;
-    right: 2%;
-    bottom: 25px;
-  }
-  /* 프로덕트 카드  */
-  .card_text .txt1 {
-    font-size: 12px !important;
-    bottom: 316px !important;
-    left: 12% !important;
-  }
-  .card_text .txt2 {
-    font-size: 12px !important;
-    right: 12% !important;
-    bottom: 218px !important;
-  }
-  /* 푸터 */
-  .footer > .main_inner > div > h3 {
-    font-size: 1.3rem !important;
-    margin-top: 1.6rem !important;
-  }
-  .footer > .main_inner > .box_cs > h3:first-child {
-    margin-top: 1rem !important;
-  }
-  .text_box {
-    margin-top: 2.7rem !important;
-  }
-  .text_box p {
-    font-size: 11px !important;
-    padding: 6px !important;
-  }
-  .box_sns > .text_box > a > img {
-    width: 25px !important;
-    height: 25px !important;
+  /* 스와이퍼 아이콘 */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    /* 슬라이드 이미지 안 상품 버튼 */
+    .view_btn,
+    .cart_btn {
+      margin-right: 5px;
+    }
+    .view_btn {
+      position: absolute;
+      top: 114px;
+      left: 0;
+    }
+    .cart_btn {
+      position: absolute;
+      top: 114px;
+      left: 150px;
+    }
+    /* 헤더 메뉴바 안 메뉴 아이콘 */
+    .header_menu_bar span:first-child img {
+      width: 25px;
+      height: 25px;
+    }
+    /* main 스와이퍼 텍스트 크기 조절 */
+    .hover-text > p {
+      height: 100px !important;
+      font-size: 13px !important;
+    }
+    .hover-text > h2 {
+      font-size: 17px !important;
+    }
+    .modal_content {
+      height: 300px !important;
+    }
+    /* 섹션 안 텍스트 */
+    .card_text {
+      font: 1rem;
+      z-index: 99999;
+    }
+    .card_text .txt1 {
+      font-size: 12px !important;
+      bottom: 75px;
+      left: 3%;
+    }
+    .card_text .txt2 {
+      position: absolute;
+      right: 2%;
+      bottom: 25px;
+    }
+    /* 프로덕트 카드  */
+    .card_text .txt1 {
+      font-size: 12px !important;
+      bottom: 316px !important;
+      left: 12% !important;
+    }
+    .card_text .txt2 {
+      font-size: 12px !important;
+      right: 12% !important;
+      bottom: 218px !important;
+    }
+    /* 푸터 */
+    .footer > .main_inner > div > h3 {
+      font-size: 1.3rem !important;
+      margin-top: 1.6rem !important;
+    }
+    .footer > .main_inner > .box_cs > h3:first-child {
+      margin-top: 1rem !important;
+    }
+    .text_box {
+      margin-top: 2.7rem !important;
+    }
+    .text_box p {
+      font-size: 11px !important;
+      padding: 6px !important;
+    }
+    .box_sns > .text_box > a > img {
+      width: 25px !important;
+      height: 25px !important;
+    }
   }
 }
 
@@ -641,13 +647,13 @@
     margin-top: 0.9rem !important;
   }
   .footer > .main_inner > .box_cs > h3:first-child {
-    margin-top: 0.3rem !important;
+    margin-top: -0.4rem !important;
   }
   .footer > .main_inner > .box_cs > h3:nth-child(2) {
     margin-top: 0.6rem !important;
   }
   .text_box {
-    margin-top: 1.2rem !important;
+    margin-top: 2.9rem !important;
   }
   .text_box p {
     font-size: 7px !important;
@@ -685,6 +691,10 @@
     padding: 0.2rem !important;
   }
   /* 프로덕트 카드  */
+  .footer > .main_inner > div {
+    height: 150px !important;
+  }
+
   .card_text .txt1,
   .card_text .txt2 {
     font-size: 8px !important;
