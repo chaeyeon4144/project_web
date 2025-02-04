@@ -12,7 +12,7 @@
 .footer .main_inner {
   width: 70%;
   max-width: 1400px;
-  height: 15vw;
+  height: 21vw;
   margin: auto;
   position: relative;
   display: flex;
@@ -28,12 +28,12 @@
 .footer > .main_inner > div > h3 {
   font-size: 1.6rem;
   text-align: center;
-  margin-top: 1.7rem;
+  margin-top: 0.6rem;
   color: #333;
 }
 .text_box {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-align: center;
   color: #333;
 }
@@ -53,10 +53,11 @@
 }
 .box_cs {
   position: relative;
-  padding: 10px;
+  padding: 9px;
 }
 .footer > .main_inner > .box_cs > h3:first-child {
 text-align: left;
+margin-top: 0.2rem;
 }
 .footer > .main_inner > .box_cs > h3:nth-child(2) {
     text-align: right;
