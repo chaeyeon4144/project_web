@@ -45,22 +45,11 @@
 .visual_swiper {
   position: relative;
 }
-/* .swiper-pagination{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-} */
 
-/* .swiper-pagination-bullet {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  
-} */
 /* 동글 버튼 */
-.swiper-pagination-bullet-active {
+.visual_swiper .swiper-pagination-bullet-active {
   background-color: #fff;
-  position: absolute;
+  /* position: absolute; */
 }
 /* 상단 메뉴 바 안 요소들 */
 .header_menu_bar span:first-child img {
@@ -119,9 +108,7 @@
   height: 100%;
   object-fit: cover;
 }
-.visual_swiper .swiper-slide {
-  position: relative;
-}
+
 .header_text {
   position: absolute;
   bottom: 20%;
@@ -201,11 +188,11 @@
     bottom: 25%;
     left: 12%;
   }
-  /* 스와이퍼 아이콘 */
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: calc(var(--swiper-navigation-size) / 44 * 27);
-    height: var(--swiper-navigation-size);
+  /* 스와이퍼 아이옽 */
+  .swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 35px;
+  }
+  
     /* 슬라이드 이미지 안 상품 버튼 */
     .view_btn,
     .cart_btn {
@@ -283,7 +270,7 @@
       height: 25px !important;
     }
   }
-}
+  
 
 @media screen and (max-width: 1100px) {
   /* 메뉴바 */
@@ -330,6 +317,10 @@
     margin-bottom: 1.5rem;
     text-align: left;
     position: relative;
+  }
+  /* 스와이퍼 아이옽 */
+  .swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 30px;
   }
 
   /* 슬라이드 이미지 안 상품 버튼 */
@@ -456,6 +447,10 @@
     text-align: left;
     position: relative;
   }
+  /* 스와이퍼 아이옽 */
+  .swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 25px;
+  }
   .view_btn {
     position: absolute;
     top: 70px;
@@ -576,6 +571,10 @@
     text-align: left;
     position: relative;
   }
+  /* 스와이퍼 아이옽 */
+  .swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 20px;
+  }
   .view_btn {
     position: absolute;
     top: 40px;
@@ -667,6 +666,10 @@
 @media screen and (max-width: 390px) {
   .header_menu_bar {
     top: 20px;
+  }
+  /* 스와이퍼 아이옽 */
+  .swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 15px;
   }
   /* 메인 플레이스 */
   .modal {
