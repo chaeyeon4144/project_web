@@ -679,8 +679,12 @@
     height: 100px !important;
   }
   .desc_header > h3 {
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
   }
+  .desc_content > p {
+    line-height: 1rem !important;
+    
+}
   /* 인풋 태그 안 placeholder 크기 변경 */
   .desc_content > input::placeholder {
     font-size: 4px;
