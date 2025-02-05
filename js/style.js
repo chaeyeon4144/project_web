@@ -82,4 +82,13 @@ window.onload = function () {
     openBtn.style.display = "block";
     closeBtn.style.display = "none";
   })
+  // place 모달창 닫기
+
+  const closeBotton = document.querySelector(".btn-close")
+  const modal = document.querySelector(".modal")
+
+  closeBotton.addEventListener("click" , function(){
+    modal.style.display = "none"
+    closeBotton.
+  })
 };

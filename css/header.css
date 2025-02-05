@@ -562,6 +562,34 @@
     width: 17px !important;
     height: 17px !important;
   }
+  .mobile_nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%vh;
+    display: none;
+  }
+  .mobile_nav .mobile_menu_list > li > a {
+    padding: 20%;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .mobile_close {
+    display: none;
+    border: none;
+    background: none;
+    color: #fff;
+    z-index: 999999999;
+    cursor: pointer;
+    position: absolute;
+    left: 27%;
+    top: 15%;
+    font-size: 2rem;
+  
+    
+  }
 }
 @media screen and (max-width: 580px) {
   .header_menu_bar {
@@ -742,6 +770,7 @@
   }
 }
 /* 모바일용 햄버거 메뉴 */
+
 .mobile_nav {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -764,6 +793,9 @@
   z-index: 999999999;
   cursor: pointer;
   position: absolute;
+  left: 27%;
+  top: 15%;
+  font-size: 2rem;
 
   
 }
