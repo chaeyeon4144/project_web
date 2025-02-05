@@ -89,6 +89,6 @@ window.onload = function () {
 
   closeBotton.addEventListener("click" , function(){
     modal.style.display = "none"
-    closeBotton.
+    closeBotton.style.display = "none"
   })
 };
