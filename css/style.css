@@ -5,7 +5,9 @@
 @import url("product.css");
 @import url("video.css");
 @import url("main_place.css");
+@import url("responsive.css");
 @import url("footer.css");
+
 
 * {
   margin: 0;
