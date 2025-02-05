@@ -23,6 +23,8 @@
   background-color: rgb(190, 168, 168, 0.25);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   width: calc(100% / 5);
+  min-width: 50px;
+  min-height: 160px;
   justify-content: space-between;
 }
 .footer > .main_inner > div > h3 {

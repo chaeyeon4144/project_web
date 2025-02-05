@@ -25,23 +25,24 @@
 }
 .main_place_img > img {
   width: 100%;
+  min-width: 280px;
+  min-height: 180px;
+  margin: auto;
 }
 .modal {
   position: absolute;
   top: 20%;
   left: 20%;
   width: 55%;
-  background-color: aquamarine;
   opacity: 0;
 }
 .modal:hover {
   opacity: 1;
-  
 }
 .modal_content {
   border: 1px solid #000;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   min-width: 100px;
   background-color: #fff;
   border-radius: 5px;
@@ -62,19 +63,16 @@
 .modal_content div {
   padding: 4%;
 }
-.modal_desc{
+.modal_desc {
   flex: 2;
   color: #333;
   text-align: center;
-  
 }
 
-.desc_header > h3{
-  
+.desc_header > h3 {
   font-size: 1.2rem;
-  
 }
-.desc_header > .btn-close{
+.desc_header > .btn-close {
   position: absolute;
   top: 6%;
   right: 4%;
@@ -83,11 +81,14 @@
   font-size: 1.7rem;
   color: #999;
 }
-.btn-close:hover{
+.modal.active {
+  display: none;
+}
+.btn-close:hover {
   color: #333;
   cursor: pointer;
 }
-.desc_content input[type=email]{
+.desc_content input[type="email"] {
   display: block;
   width: 100%;
   text-align: center;
@@ -97,7 +98,7 @@
   outline: none;
   cursor: pointer;
 }
-.desc_content button{
+.desc_content button {
   display: block;
   width: 100%;
   border: none;
@@ -111,5 +112,4 @@
   font-size: 0.9rem;
   line-height: 1.2rem;
   margin: 2%;
-  
 }

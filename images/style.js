@@ -67,19 +67,5 @@ window.onload = function () {
   // close.addEventListener("click", function () {
   //   modalbox.classList.remove(".active");
   // });
-  const openBtn = document.querySelector(".ham_bar");
-  const contanier = document.querySelector(".mobile_nav");
-  const closeBtn = document.querySelector(".mobile_close");
-
-  openBtn.addEventListener("click", function () {
-    contanier.style.display = "block";
-    closeBtn.style.display = "block";
-    openBtn.style.display = "none";
-  });
-
-  closeBtn.addEventListener("click" , function(){
-    contanier.style.display = "none";
-    openBtn.style.display = "block";
-    closeBtn.style.display = "none";
-  })
+  const openBtn = document.querySelector('.ham_bar')
 };

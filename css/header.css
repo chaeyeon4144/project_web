@@ -52,7 +52,11 @@
   /* position: absolute; */
 }
 /* 상단 메뉴 바 안 요소들 */
-.header_menu_bar span:first-child img {
+.ham_bar {
+  background: none;
+  border: none;
+}
+.ham_bar > img {
   width: 32px;
   height: 32px;
 
@@ -189,88 +193,88 @@
     left: 12%;
   }
   /* 스와이퍼 아이옽 */
-  .swiper-button-next::after, .swiper-button-prev::after{
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
     font-size: 35px;
   }
-  
-    /* 슬라이드 이미지 안 상품 버튼 */
-    .view_btn,
-    .cart_btn {
-      margin-right: 5px;
-    }
-    .view_btn {
-      position: absolute;
-      top: 114px;
-      left: 0;
-    }
-    .cart_btn {
-      position: absolute;
-      top: 114px;
-      left: 150px;
-    }
-    /* 헤더 메뉴바 안 메뉴 아이콘 */
-    .header_menu_bar span:first-child img {
-      width: 25px;
-      height: 25px;
-    }
-    /* main 스와이퍼 텍스트 크기 조절 */
-    .hover-text > p {
-      height: 100px !important;
-      font-size: 13px !important;
-    }
-    .hover-text > h2 {
-      font-size: 17px !important;
-    }
-    .modal_content {
-      height: 300px !important;
-    }
-    /* 섹션 안 텍스트 */
-    .card_text {
-      font: 1rem;
-      z-index: 99999;
-    }
-    .card_text .txt1 {
-      font-size: 12px !important;
-      bottom: 75px;
-      left: 3%;
-    }
-    .card_text .txt2 {
-      position: absolute;
-      right: 2%;
-      bottom: 25px;
-    }
-    /* 프로덕트 카드  */
-    .card_text .txt1 {
-      font-size: 12px !important;
-      bottom: 316px !important;
-      left: 12% !important;
-    }
-    .card_text .txt2 {
-      font-size: 12px !important;
-      right: 12% !important;
-      bottom: 218px !important;
-    }
-    /* 푸터 */
-    .footer > .main_inner > div > h3 {
-      font-size: 1.3rem !important;
-      margin-top: 1.6rem !important;
-    }
-    .footer > .main_inner > .box_cs > h3:first-child {
-      margin-top: 1rem !important;
-    }
-    .text_box {
-      margin-top: 2.7rem !important;
-    }
-    .text_box p {
-      font-size: 11px !important;
-      padding: 6px !important;
-    }
-    .box_sns > .text_box > a > img {
-      width: 25px !important;
-      height: 25px !important;
-    }
+
+  /* 슬라이드 이미지 안 상품 버튼 */
+  .view_btn,
+  .cart_btn {
+    margin-right: 5px;
   }
-  
+  .view_btn {
+    position: absolute;
+    top: 114px;
+    left: 0;
+  }
+  .cart_btn {
+    position: absolute;
+    top: 114px;
+    left: 150px;
+  }
+  /* 헤더 메뉴바 안 메뉴 아이콘 */
+  .header_menu_bar span:first-child img {
+    width: 25px;
+    height: 25px;
+  }
+  /* main 스와이퍼 텍스트 크기 조절 */
+  .hover-text > p {
+    height: 100px !important;
+    font-size: 13px !important;
+  }
+  .hover-text > h2 {
+    font-size: 17px !important;
+  }
+  .modal_content {
+    height: 300px !important;
+  }
+  /* 섹션 안 텍스트 */
+  .card_text {
+    font: 1rem;
+    z-index: 99999;
+  }
+  .card_text .txt1 {
+    font-size: 12px !important;
+    bottom: 75px;
+    left: 3%;
+  }
+  .card_text .txt2 {
+    position: absolute;
+    right: 2%;
+    bottom: 25px;
+  }
+  /* 프로덕트 카드  */
+  .card_text .txt1 {
+    font-size: 12px !important;
+    bottom: 316px !important;
+    left: 12% !important;
+  }
+  .card_text .txt2 {
+    font-size: 12px !important;
+    right: 12% !important;
+    bottom: 218px !important;
+  }
+  /* 푸터 */
+  .footer > .main_inner > div > h3 {
+    font-size: 1.3rem !important;
+    margin-top: 1.6rem !important;
+  }
+  .footer > .main_inner > .box_cs > h3:first-child {
+    margin-top: 1rem !important;
+  }
+  .text_box {
+    margin-top: 2.7rem !important;
+  }
+  .text_box p {
+    font-size: 11px !important;
+    padding: 6px !important;
+  }
+  .box_sns > .text_box > a > img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   /* 메뉴바 */
@@ -319,7 +323,8 @@
     position: relative;
   }
   /* 스와이퍼 아이옽 */
-  .swiper-button-next::after, .swiper-button-prev::after{
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
     font-size: 30px;
   }
 
@@ -339,7 +344,7 @@
     left: 140px;
   }
   /* 헤더 메뉴바 안 메뉴 아이콘 */
-  .header_menu_bar span:first-child img {
+  .ham_bar > img {
     width: 20px;
     height: 20px;
 
@@ -448,7 +453,8 @@
     position: relative;
   }
   /* 스와이퍼 아이옽 */
-  .swiper-button-next::after, .swiper-button-prev::after{
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
     font-size: 25px;
   }
   .view_btn {
@@ -465,12 +471,33 @@
     display: none;
   }
   /* 헤더 메뉴바 안 메뉴 아이콘 */
-  .header_menu_bar span:first-child img {
+  .ham_bar > img {
     width: 15px;
     height: 15px;
-
     margin: 0px 19px;
   }
+  /* 모바일 햄버거 바  */
+
+  /* .mobile_nav {
+    width: 30%;
+    height: 30%vh;
+    display: none !important;
+  } */
+  /* .mobile_nav .mobile_menu_list > li > a {
+    padding: 10%;
+    font-size: 1rem;
+    color: #fff;
+  } */
+  /* .mobile_close {
+    display: none !important;
+    border: none;
+    background: none;
+    color: #fff;
+    z-index: 999999999;
+    cursor: pointer;
+    margin: -3%;
+  } */
+
   /* main 스와이퍼 텍스트 크기 조절 */
   .main_top > h1,
   .main_bottom > h1 {
@@ -572,7 +599,8 @@
     position: relative;
   }
   /* 스와이퍼 아이옽 */
-  .swiper-button-next::after, .swiper-button-prev::after{
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
     font-size: 20px;
   }
   .view_btn {
@@ -591,7 +619,7 @@
     padding: 5px 10px;
     font-size: 1rem;
   }
-  .header_menu_bar span:first-child img {
+  .ham_bar > img {
     width: 11px;
     height: 11px;
 
@@ -652,7 +680,7 @@
     margin-top: 0.6rem !important;
   }
   .text_box {
-    margin-top: 2.9rem !important;
+    margin-top: 2.6rem !important;
   }
   .text_box p {
     font-size: 7px !important;
@@ -668,7 +696,8 @@
     top: 20px;
   }
   /* 스와이퍼 아이옽 */
-  .swiper-button-next::after, .swiper-button-prev::after{
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
     font-size: 15px;
   }
   /* 메인 플레이스 */
@@ -683,8 +712,7 @@
   }
   .desc_content > p {
     line-height: 1rem !important;
-    
-}
+  }
   /* 인풋 태그 안 placeholder 크기 변경 */
   .desc_content > input::placeholder {
     font-size: 4px;
@@ -698,12 +726,44 @@
     padding: 0.2rem !important;
   }
   /* 프로덕트 카드  */
+  .footer {
+    margin-top: 10% !important;
+  }
   .footer > .main_inner > div {
-    height: 150px !important;
+    height: 160px !important;
+  }
+  .box_cs > h3:nth-child(2) {
+    display: none;
   }
 
   .card_text .txt1,
   .card_text .txt2 {
     font-size: 8px !important;
   }
+}
+/* 모바일용 햄버거 메뉴 */
+.mobile_nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 30%vh;
+  display: none;
+}
+.mobile_nav .mobile_menu_list > li > a {
+  padding: 20%;
+  font-size: 1rem;
+  color: #fff;
+}
+.mobile_close {
+  display: none;
+  border: none;
+  background: none;
+  color: #fff;
+  z-index: 999999999;
+  cursor: pointer;
+  position: absolute;
+
+  
 }

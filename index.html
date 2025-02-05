@@ -23,16 +23,21 @@
     <meta property="og:image" content="https://chaeyeon4144.github.io/project_web/images/header_slid_03page.jpg" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="tou t yest 웹 사이트입니다." />
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" href="assests/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assests/favicon.svg" />
+    <link rel="shortcut icon" href="assests/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assests/apple-touch-icon.png" />
+    <link rel="manifest" href="assests/site.webmanifest" />
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- js -->
     <!-- Swiper JS -->
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <!-- js -->
     <script src="js/style.js"></script>
     <title>Project_web_design</title>
   </head>
@@ -44,11 +49,27 @@
         <!-- 헤더 안 메뉴 바 -->
         <div class="header_menu_bar">
           <!-- 메뉴 바 안 메뉴아이콘 -->
-          <span class="ham_bar">
-            <a href="#">
-              <img src="images/header_menu_bar.png" alt="munu_icon" />
-            </a>
-          </span>
+          <button class="ham_bar">
+            <img src="images/header_menu_bar.png" alt="munu_icon" />
+          </button>
+
+          <!-- 모바일용 햄버거 메뉴 -->
+          <nav class="mobile_nav">
+            <ul class="mobile_menu_list">
+              <li>
+                <a href="">SHOP</a>
+              </li>
+              <li>
+                <a href="">CART(0)</a>
+              </li>
+              <li>
+                <a href="">MY&nbsp;PAGE</a>
+              </li>
+              <li><a href="">GLOBAL</a></li>
+            </ul>
+          </nav>
+          <button class="mobile_close">&times;</button>
+
           <!-- 메뉴 바 안 상품 바로가기 텍스트 -->
           <span><a href="#">I&nbsp; Now&nbsp;I&nbsp;Love&nbsp;Myself</a></span>
           <!-- 메뉴 바 안 홈페이지 로고 -->
@@ -121,21 +142,6 @@
           <div class="swiper-button-prev"></div>
         </div>
       </header>
-      <!-- 모바일 - 헤더 -->
-      <div class="mobile_menu">
-        <ul>
-          <li>
-            <a href="">SHOP</a>
-          </li>
-          <li>
-            <a href="">CART(0)</a>
-          </li>
-          <li>
-            <a href="">MY&nbsp;PAGE</a>
-          </li>
-          <li><a href="">GLOBAL</a></li>
-        </ul>
-      </div>
 
       <!-- 메인  -->
       <section class="main_top">
@@ -335,7 +341,7 @@
               <div class="modal_desc">
                 <div class="desc_header">
                   <h3>FLAGSHIP STORE 방문 후<br />혜택을 받아보세요.</h3>
-                  <button class="btn-close">&times;</button>
+                  <button class="btn-close" id="close">&times;</button>
                 </div>
                 <div class="desc_content">
                   <input type="email" placeholder="이메일 주소를 입력하세요." />
